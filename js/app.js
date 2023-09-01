@@ -67,10 +67,13 @@ function readBooks() {
                           <p class="card-text">
                               ${item.bookAuthor}
                           </p>
-                          <button class="btn btn-outline-danger btnDelete" id="${item.id}">
+                          <p class="card-text">
+                            ${item.bookPrice}
+                          </p>
+                          <button class="btn btn-outline-secondary btnDelete" id="${item.id}">
                               Delete
                           </button>
-                          <button class="btn btn-outline-warning btnEdit" id="${item.id}" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <button class="btn btn-outline-secondary btnEdit" id="${item.id}" data-bs-toggle="modal" data-bs-target="#exampleModal">
                               Edit
                           </button>
                       </div>
@@ -164,3 +167,25 @@ nextBtn.addEventListener('click', () => {
   currentPage++;
   readBooks();
 });
+// Details
+let detailsModal = document.querySelector('.info-modal');
+
+document.addEventListener('click', (e) => {
+  let classImg = [...e.target.classList];
+  if (classImg.includes('detailsCard')) {
+    details(e.target.id);
+    detailsModal.style.display = 'block';
+  }
+});
+
+function details(id) {
+  try {
+    fetch(`${API}/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  } catch {
+    console.log('Error');
+  }
+}

@@ -141,11 +141,11 @@ body{
 
 }
 .carouselImages{
-    background-size: cover;
+    /* background-size: cover; */
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background-position: center;
+    /* background-position: center; */
     color: #f1ed97;
     display: flex;
     justify-content: center;
@@ -172,6 +172,10 @@ body{
   background: rgb(0,140,255);
   box-shadow: 0 0 25px rgb(0,140,255);
   margin-top: 25px;
+}
+.main-button a{
+    text-decoration: none;
+    color: #fff;
 }
 .main-button:hover {
     box-shadow: 0 0 5px rgb(0,140,255),
@@ -212,4 +216,7 @@ body{
     width: 10%;
     height: 10%;
     border-radius: 50%;
+}
+.info-modal{
+    display: none;
 }
