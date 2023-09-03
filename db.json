@@ -1,53 +1,74 @@
 {
   "products": [
     {
-      "bookName": "Diamond Necklace",
-      "bookAuthor": "Make the ultimate statement with this gorgeous adjustable graduated diamond necklace. ",
-      "bookImage": "https://theclearcut.co/cdn/shop/products/BlockChainNecklace_400x400_crop_center.jpg?v=1667859710",
-      "bookPrice": "$5000",
+      "name": "Diamond Necklace",
+      "desc": "Make the ultimate statement with this gorgeous adjustable graduated diamond necklace. ",
+      "image": "https://theclearcut.co/cdn/shop/products/BlockChainNecklace_400x400_crop_center.jpg?v=1667859710",
+      "price": "$5000",
+      "category": "necklaces",
       "id": 1
     },
     {
-      "bookName": "Diamond ring",
-      "bookAuthor": "White diamond ratira ring",
-      "bookImage": "https://mociun.com/cdn/shop/products/4Qi3THKU7n501_b6iyRmacP3zx9-OuMuZ-C-enUrjPQ.jpg?v=1692644761&width=1946",
-      "bookPrice": "$3000",
+      "name": "Diamond ring",
+      "desc": "White diamond ratira ring",
+      "image": "https://mociun.com/cdn/shop/products/4Qi3THKU7n501_b6iyRmacP3zx9-OuMuZ-C-enUrjPQ.jpg?v=1692644761&width=1946",
+      "price": "$3000",
+      "category": "rings",
       "id": 2
     },
     {
-      "bookName": "Diamond Bracelet",
-      "bookAuthor": "A classic piece that adds natural sparkle to your life and will never go out of style!",
-      "bookImage": "https://theclearcut.co/cdn/shop/products/10165_5ptDiamondTennisBracelet_White_TT_A_2048x2048.jpg?v=1620762588",
-      "bookPrice": "$3500",
+      "name": "Diamond Bracelet",
+      "desc": "A classic piece that adds natural sparkle to your life and will never go out of style!",
+      "image": "https://theclearcut.co/cdn/shop/products/10165_5ptDiamondTennisBracelet_White_TT_A_2048x2048.jpg?v=1620762588",
+      "price": "$3500",
+      "category": "bracelets",
       "id": 3
     },
     {
-      "bookName": "paloma necklace",
-      "bookAuthor": "Designed by The Clear Cut x Jewels with Jules. This is the perfect timeless but playful piece for your necklace stack.",
-      "bookImage": "https://theclearcut.co/cdn/shop/files/OvalPink_400x400_crop_center.png?v=1692035479",
-      "bookPrice": "$2000",
+      "name": "Paloma necklace",
+      "desc": "Designed by The Clear Cut x Jewels with Jules. This is the perfect timeless but playful piece for your necklace stack.",
+      "image": "https://theclearcut.co/cdn/shop/files/OvalPink_400x400_crop_center.png?v=1692035479",
+      "price": "$2000",
+      "category": "necklaces",
       "id": 4
     },
     {
-      "bookName": "bellini bracelet",
-      "bookAuthor": "Designed by The Clear Cut x Jewels with Jules. This gorgeous piece adds a delightful burst of color to your bracelet stack.",
-      "bookImage": "https://theclearcut.co/cdn/shop/files/IMG_9434_bdefcbca-7850-4dbb-9a16-db8bed9c1b9c_400x400_crop_center.jpg?v=1691004122",
-      "bookPrice": "$1500",
+      "name": "Bellini bracelet",
+      "desc": "Designed by The Clear Cut x Jewels with Jules. This gorgeous piece adds a delightful burst of color to your bracelet stack.",
+      "image": "https://theclearcut.co/cdn/shop/files/IMG_9434_bdefcbca-7850-4dbb-9a16-db8bed9c1b9c_400x400_crop_center.jpg?v=1691004122",
+      "price": "$1500",
+      "category": "bracelets",
       "id": 5
     },
     {
-      "bookName": "emerald cut tennis bracelet",
-      "bookAuthor": "'Ace' your accessory game and let this luxurious piece be the ultimate match point for your diamond ensemble.",
-      "bookImage": "https://theclearcut.co/cdn/shop/files/12_ed1da46a-db94-4abd-a0de-738e84c35899_400x400_crop_center.png?v=1686151468",
-      "bookPrice": "$6400",
+      "name": "emerald cut tennis bracelet",
+      "desc": "'Ace' your accessory game and let this luxurious piece be the ultimate match point for your diamond ensemble.",
+      "image": "https://theclearcut.co/cdn/shop/files/12_ed1da46a-db94-4abd-a0de-738e84c35899_400x400_crop_center.png?v=1686151468",
+      "price": "$6400",
+      "category": "bracelets",
       "id": 6
     },
     {
-      "bookName": "emerald cut chelsea chain bracelet",
-      "bookAuthor": "The ultimate cool girl bracelet with a natural emerald cut diamond is perfect to add to any wrist stack or wear on its own!",
-      "bookImage": "https://theclearcut.co/cdn/shop/products/xweew_400x400_crop_center.jpg?v=1648046129",
-      "bookPrice": "$3000",
+      "name": "Emerald cut chelsea chain bracelet",
+      "desc": "The ultimate cool girl bracelet with a natural emerald cut diamond is perfect to add to any wrist stack or wear on its own!",
+      "image": "https://theclearcut.co/cdn/shop/products/xweew_400x400_crop_center.jpg?v=1648046129",
+      "price": "$3000",
+      "category": "bracelets",
       "id": 7
+    }
+  ],
+  "users": [
+    {
+      "userName": "Amber",
+      "userEmail": "amber@gmail.com",
+      "userPassword": "qwerty",
+      "id": 1
+    },
+    {
+      "userName": "Alan",
+      "userEmail": "alan@gmail.com",
+      "userPassword": "qwerty",
+      "id": 2
     }
   ]
 }
