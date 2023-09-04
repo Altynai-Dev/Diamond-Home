@@ -69,6 +69,12 @@
       "userEmail": "alan@gmail.com",
       "userPassword": "qwerty",
       "id": 2
+    },
+    {
+      "userName": "John",
+      "userEmail": "john@gmail.com",
+      "userPassword": "qwerty",
+      "id": 3
     }
   ]
 }
