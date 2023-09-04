@@ -309,3 +309,9 @@ body{
         padding: 5px 5px;
     }
   }
+
+  @media (max-width: 325px) {
+    footer{
+        font-size: 0.7rem;
+    }
+  }

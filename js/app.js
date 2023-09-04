@@ -62,7 +62,7 @@ function createProducts(product) {
 
 // Read отображение данных
 function readProducts() {
-  fetch(`${API}?q=${searchValue}?&_page=${currentPage}&_limit=9`) //для поиска, page будет указывать на currentPage, больше 6 объектов не отображается
+  fetch(`${API}?q=${searchValue}&_page=${currentPage}&_limit=6`) //для поиска, page будет указывать на currentPage, больше 6 объектов не отображается
     .then((res) => res.json())
     .then((data) => {
       sectionProducts.innerHTML = '';
@@ -332,3 +332,8 @@ function filter(param) {
       pageFunc();
     });
 }
+const toggleBackground = document.querySelector('#toggle');
+
+toggleBackground.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});

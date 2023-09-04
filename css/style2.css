@@ -1,13 +1,91 @@
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 body{
     background: #fff;
     background-size: cover;
+    transition: background-color .6s cubic-bezier(.7, 0, .7, 1);  
+}
+body.dark {
+  background: rgb(92, 90, 90);
+  span {
+    color: #fff
+  }
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 0 1em;
+  span {
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color .4s cubic-bezier(.7, 0, .7, 1);
+  }
 }
 
+input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+label {
+  display: block;
+  background-color: #ddd;
+  width: 60px;
+  height: 30px;
+  border-radius: 2em;
+  overflow: hidden;
+  transition: transform .6s cubic-bezier(.7, 0, .7, 1);
+  margin: 0 .5em
+}
+
+label::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #81C784;
+  border-radius: inherit;
+  transform: translateX(-80%);
+  transition: transform .4s cubic-bezier(.7, 0, .7, 1);
+}
+
+label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  background-color: #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .35);
+  border: 1px solid #ccc;
+  transform: translateX(0);
+  cursor: pointer;
+  transition: transform .4s cubic-bezier(.7, 0, .7, 1);
+  z-index: 1;
+}
+
+input[type="checkbox"]:checked ~ label {
+  &::after {
+    transform: translateX(100%);
+  }
+  &::before {
+    transform: translateX(0);
+  }
+}
+
+input[type="checkbox"]:checked ~ label,
+input[type="checkbox"]:focus ~ label{
+  outline: solid 1px lightgreen;
+}
 .nav-item{
     font-size: 1.5rem;
     color: #ac8737;
